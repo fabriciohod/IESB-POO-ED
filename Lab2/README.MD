@@ -29,12 +29,12 @@ Um requisito importante é que o saldo das contas NUNCA deve estar negativo. Cas
 Para validar o sistema considere que existam 3 clientes, com respetivos dados abaixo:
 
 ---
-**Cliente 1**
+### Cliente 1
 - Nome: Bob Nelson
 - Número da conta: 12345-6
 - Tipo da conta: Conta-corrente
 ---
-**Cliente 2**
+### Cliente 2
 - Nome: Testolfo Rocha
 - Número da conta: 71717-1
 - Tipo da conta: Conta-poupança
