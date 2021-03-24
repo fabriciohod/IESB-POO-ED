@@ -23,6 +23,7 @@ namespace Lab2
             Console.WriteLine(text);
             Console.WriteLine("-------------------------------------------------------------------------------");
         }
+
         public bool AddBalance(double valueToBeAdd)
         {
             Balance += valueToBeAdd;
