@@ -1,13 +1,12 @@
 using System;
-using System.Collections.Generic;
 
 namespace Lab2
 {
-    public class BankAccount
+    public  class BankAccount
     {
         public string OwnerName { get; }
         public string ID { get; }
-        public AccountType accountType { get; }
+        public AccountType AccountType { get; }
         private double Balance;
 
         public BankAccount(string ownerName, string id, AccountType accountType, double balance = 0)
@@ -15,7 +14,7 @@ namespace Lab2
             ID = id;
             Balance = balance;
             OwnerName = ownerName;
-            this.accountType = accountType;
+            AccountType = accountType;
         }
 
         public bool AddBalance(double valueToBeAdd)
@@ -46,7 +45,7 @@ namespace Lab2
 
             targetAccount.AddBalance(valueToBeTransfere);
 
-            double taxes = accountType switch
+            double taxes = AccountType switch
             {
                 AccountType.ContaCorrente => valueToBeTransfere - 0.10,
                 AccountType.ContaPoupanca => valueToBeTransfere - 0.15,
@@ -69,7 +68,7 @@ namespace Lab2
                 return false;
             }
 
-            double taxes = accountType switch
+            double taxes = AccountType switch
             {
                 AccountType.ContaCorrente => valueToBeWithdrawl - 0.37,
                 AccountType.ContaPoupanca => valueToBeWithdrawl - 0.20,
