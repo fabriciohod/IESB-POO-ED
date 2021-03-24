@@ -17,13 +17,12 @@ namespace Lab2
             AccountType = accountType;
         }
 
-        private void Log(string text)
+        private static void Log(string text)
         {
             Console.WriteLine("\n-------------------------------------------------------------------------------");
             Console.WriteLine(text);
             Console.WriteLine("-------------------------------------------------------------------------------");
         }
-        
         public bool AddBalance(double valueToBeAdd)
         {
             Balance += valueToBeAdd;
