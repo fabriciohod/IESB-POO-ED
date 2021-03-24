@@ -33,7 +33,7 @@ namespace Lab2.Tests
         }
 
         [Fact]
-        public void Empty_Account_Try_TO_Transference()
+        public void Empty_Account_Try_To_Transference()
         {
             BankAccount sander = new("sander","00000-0",AccountType.ContaCorrente);
             BankAccount recever = new("recever","00000-0",AccountType.ContaCorrente);
