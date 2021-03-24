@@ -16,6 +16,14 @@ namespace Lab2
             OwnerName = ownerName;
             AccountType = accountType;
         }
+        
+        private void Log(string text)
+        {
+            Console.WriteLine("\n-------------------------------------------------------------------------------");
+            Console.WriteLine(text);
+            Console.WriteLine("-------------------------------------------------------------------------------");
+        }
+
 
         public bool AddBalance(double valueToBeAdd)
         {
@@ -27,13 +35,6 @@ namespace Lab2
         }
 
         public double CurrentBalace() => Balance;
-
-        private void Log(string text)
-        {
-            Console.WriteLine("\n-------------------------------------------------------------------------------");
-            Console.WriteLine(text);
-            Console.WriteLine("-------------------------------------------------------------------------------");
-        }
 
         public bool TransfereTo(BankAccount targetAccount, double valueToBeTransfere)
         {

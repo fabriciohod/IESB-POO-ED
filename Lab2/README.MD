@@ -29,12 +29,12 @@ Um requisito importante é que o saldo das contas NUNCA deve estar negativo. Cas
 Para validar o sistema considere que existam 3 clientes, com respetivos dados abaixo:
 
 ---
-**Cliente 1**
+### Cliente 1
 - Nome: Bob Nelson
 - Número da conta: 12345-6
 - Tipo da conta: Conta-corrente
 ---
-**Cliente 2**
+### Cliente 2
 - Nome: Testolfo Rocha
 - Número da conta: 71717-1
 - Tipo da conta: Conta-poupança
@@ -60,7 +60,7 @@ Verifique qual o valor final do saldo de cada conta ao final das operações aba
 |   Bob Nelson     |        Transferiu para Lisa Leite       |     R$ 1500,00    |
 |   Testolfo Rocha |        Transferiu para Lisa Leite       |     R$ 1200,00    |
 |   Bob Nelson     |        Efetuou saque                    |     R$ 2000,00    |
-|   Lisa Leit      |        Depositou na própria conta       |     R$ 100,00     |
+|   Lisa Leite     |        Depositou na própria conta       |     R$ 100,00     |
 |   Testolfo Rocha |        Transferiu para Bob Nelson       |     R$ 700,00     |
 
 > P.S.(1) Essas operações devem ser simuladas em uma classe de teste.
