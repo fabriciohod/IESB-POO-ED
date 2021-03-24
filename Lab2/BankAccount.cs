@@ -9,6 +9,8 @@ namespace Lab2
         public AccountType AccountType { get; }
         private double Balance;
 
+        public double CurrentBalace() => Balance;
+
         public BankAccount(string ownerName, string id, AccountType accountType, double balance = 0)
         {
             ID = id;
@@ -33,7 +35,6 @@ namespace Lab2
             return true;
         }
 
-        public double CurrentBalace() => Balance;
 
         public bool TransfereTo(BankAccount targetAccount, double valueToBeTransfere)
         {
