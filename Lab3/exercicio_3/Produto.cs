@@ -8,7 +8,7 @@ namespace exercicio_3
         private string descricao;
         private double preco;
 
-        protected Produto(double _preco,string _titulo , string _descricao = "Item da loja")
+        protected Produto(double _preco, string _titulo, string _descricao = "Item da loja")
         {
             preco = _preco;
             titulo = _titulo;

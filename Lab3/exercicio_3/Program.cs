@@ -8,11 +8,11 @@ namespace exercicio_3
         {
             double totalDaCompra = 0;
 
-            Produto[] carrinho = 
+            Produto[] carrinho =
             {
-                new Livro(60,"Harry Potter","JK Rowling", "Uma historia de aventura e magia"), 
+                new Livro(60,"Harry Potter","JK Rowling", "Uma historia de aventura e magia"),
                 new JogoDigital(100, "Counter-Strike", "PC"),
-                new Livro(60,"Solo Leveling - Volume 1","Chugog"), 
+                new Livro(60,"Solo Leveling - Volume 1","Chugog"),
             };
 
             foreach (var item in carrinho)

@@ -28,8 +28,8 @@ namespace exercicio_5
         {
             return String.Join(
                 $"Pequena: {precos.Pequeno:C}\n"
-                ,$"Media: {precos.Medio:C}\n"
-                ,$"Grande: {precos.Grande:C}"
+                , $"Media: {precos.Medio:C}\n"
+                , $"Grande: {precos.Grande:C}"
             );
         }
 
