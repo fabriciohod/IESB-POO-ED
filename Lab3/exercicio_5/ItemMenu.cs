@@ -20,12 +20,12 @@ namespace exercicio_5
 
         public string ImprimirNome()
         {
-            return "";
+            return nome;
         }
 
         public virtual string ImprimirPreco()
         {
-            return "";
+            return preco.ToString();
         }
 
         public override string ToString()
