@@ -2,7 +2,7 @@ using System;
 
 namespace exercicio_3
 {
-    public abstract class Produto
+    public class Produto
     {
         private string titulo;
         private string descricao;
