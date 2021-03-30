@@ -2,7 +2,7 @@ using System;
 
 namespace Lab2
 {
-    public  class BankAccount
+    public class BankAccount
     {
         public string OwnerName { get; }
         public string ID { get; }

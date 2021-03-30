@@ -16,7 +16,7 @@ namespace Lab2
 
             bobNelson.TransfereTo(testolfoRocha, 600);
             lisaLeite.Withdrawl(250);
-            lisaLeite.TransfereTo(testolfoRocha,400);
+            lisaLeite.TransfereTo(testolfoRocha, 400);
 
             testolfoRocha.TransfereTo(bobNelson, 1000);
             bobNelson.Withdrawl(900000);

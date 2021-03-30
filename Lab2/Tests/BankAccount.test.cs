@@ -8,11 +8,11 @@ namespace Lab2.Tests
         [Fact]
         public void Test_Add_Balance()
         {
-           BankAccount empty = new("empty","00000-0",AccountType.ContaCorrente);
+            BankAccount empty = new("empty", "00000-0", AccountType.ContaCorrente);
 
-           empty.AddBalance(100);
+            empty.AddBalance(100);
 
-           Assert.Equal(100, empty.CurrentBalace());
+            Assert.Equal(100, empty.CurrentBalace());
         }
     }
 
@@ -21,12 +21,12 @@ namespace Lab2.Tests
         [Fact]
         public void Transference_Balance_To_Other_Account()
         {
-            BankAccount sander = new("sander","00000-0",AccountType.ContaCorrente, 1000);
-            BankAccount recever = new("recever","00000-0",AccountType.ContaCorrente);
+            BankAccount sander = new("sander", "00000-0", AccountType.ContaCorrente, 1000);
+            BankAccount recever = new("recever", "00000-0", AccountType.ContaCorrente);
 
             sander.TransfereTo(recever, 100);
 
-            bool result () =>
+            bool result() =>
                 sander.CurrentBalace() == 900.1 && recever.CurrentBalace() == 100;
 
             Assert.True(result());
@@ -35,8 +35,8 @@ namespace Lab2.Tests
         [Fact]
         public void Empty_Account_Try_To_Transference()
         {
-            BankAccount sander = new("sander","00000-0",AccountType.ContaCorrente);
-            BankAccount recever = new("recever","00000-0",AccountType.ContaCorrente);
+            BankAccount sander = new("sander", "00000-0", AccountType.ContaCorrente);
+            BankAccount recever = new("recever", "00000-0", AccountType.ContaCorrente);
 
             var result = sander.TransfereTo(recever, 100);
 
@@ -59,7 +59,7 @@ namespace Lab2.Tests
         [Fact]
         public void Try_Withdrawl_Empty_Account()
         {
-            BankAccount empty = new("empty","00000-0",AccountType.ContaCorrente);
+            BankAccount empty = new("empty", "00000-0", AccountType.ContaCorrente);
 
             var result = empty.Withdrawl(100);
 
