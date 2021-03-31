@@ -17,7 +17,7 @@ namespace exercicio_5
 
             foreach (var item in menu)
             {
-                Console.WriteLine("\n" + item);
+                Console.WriteLine($"\n{item}");
             }
         }
     }
