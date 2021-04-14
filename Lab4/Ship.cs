@@ -45,7 +45,7 @@ namespace Lab4
         public virtual void ShotTarget(Ship target, Vector2 targetPosition)
         {
             Console.WriteLine($"{Name} is attacking {target.Name} at {target.Position.CurrentPosition()}," +
-                $"\n the projectale vector is {Position.CurrentPosition() - target.Position.CurrentPosition()}");
+                $"\nthe projectale vector is {Position.CurrentPosition() - target.Position.CurrentPosition()}");
 
             if (ShipGun.Shot(target))
             {

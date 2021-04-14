@@ -25,6 +25,7 @@ namespace Lab4
             };
 
             bobNelson.MoveTo(new Vector2(10,10), asteroids, pirates);
+            bobNelson.ShotTarget(pirates[0], pirates[0].Position.CurrentPosition());
         }
     }
 }
