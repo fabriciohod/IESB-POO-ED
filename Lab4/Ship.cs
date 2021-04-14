@@ -24,7 +24,7 @@ namespace Lab4
                 if (newPosition != ship.Position.CurrentPosition())
                     continue;
 
-                Console.WriteLine("Nao e possivel ir para essa posicao, pois ja existe uma nave la");
+                Console.WriteLine($"\n{Name} ,nao e possivel ir para essa posicao, pois ja existe uma nave la");
                 return;
             }
 
@@ -34,17 +34,17 @@ namespace Lab4
                     continue;
 
                 TakeDamage();
-                Console.WriteLine($"Voce bateu em um asteroide, voce recebeu 1 de dano, sua energia atual e {Energy}");
+                Console.WriteLine($"\n{Name} bateu em um asteroide, voce recebeu 1 de dano, sua energia atual e {Energy}");
                 return;
             }
 
             Position.MoveToPosition(newPosition);
-            Console.WriteLine("Voce chegou a nova posicao com sucesso!");
+            Console.WriteLine($"\n{Name} chegou a nova posicao com sucesso!");
         }
 
         public virtual void ShotTarget(Ship target, Vector2 targetPosition)
         {
-            Console.WriteLine($"{Name} is attacking {target.Name} at {target.Position.CurrentPosition()}," +
+            Console.WriteLine($"\n{Name} is attacking {target.Name} at {target.Position.CurrentPosition()}," +
                 $"\nthe projectale vector is {Position.CurrentPosition() - target.Position.CurrentPosition()}");
 
             if (ShipGun.Shot(target))
